@@ -26,4 +26,10 @@ client.on('message', msg => {
   }
 });
 
+cloent.on('message', msg => {
+  if (msg.content === '有') {
+    msg.reply('乖寶寶');
+  }
+});
+
 client.login(token);
